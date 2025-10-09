@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#ask for the age 
+#conditional statements for a child, teenager and adults
+
+read -p "Enter your age:"age
+echo 
+
+
+if [[ 0 >= $age <= 12 ]];
+then
+	echo "you are a child"
+elif [[ 13 >= $age <= 19 ]];
+then
+	echo"you are a teenager"
+elif [[ $age >= 20 ]];
+then
+	echo"you are an adult"
+fi
+
